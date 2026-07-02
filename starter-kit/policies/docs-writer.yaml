@@ -46,26 +46,50 @@ tool_policies:
     - { protocol: "mcp", tool: "github.create_or_update_file", target: "README*",    decision: "review" }
     - { protocol: "mcp", tool: "github.create_or_update_file", target: "CHANGELOG*", decision: "review" }
     - { protocol: "mcp", tool: "github.create_or_update_file", target: "docs/**",    decision: "review" }
-    - { protocol: "git", tool: "github.create_or_update_file", target: "*.go",    decision: "block" }
-    - { protocol: "git", tool: "github.create_or_update_file", target: "*.py",    decision: "block" }
-    - { protocol: "git", tool: "github.create_or_update_file", target: "*.js",    decision: "block" }
-    - { protocol: "git", tool: "github.create_or_update_file", target: "*.jsx",   decision: "block" }
-    - { protocol: "git", tool: "github.create_or_update_file", target: "*.ts",    decision: "block" }
-    - { protocol: "git", tool: "github.create_or_update_file", target: "*.tsx",   decision: "block" }
-    - { protocol: "git", tool: "github.create_or_update_file", target: "*.rs",    decision: "block" }
-    - { protocol: "git", tool: "github.create_or_update_file", target: "*.java",  decision: "block" }
-    - { protocol: "git", tool: "github.create_or_update_file", target: "*.kt",    decision: "block" }
-    - { protocol: "git", tool: "github.create_or_update_file", target: "*.swift", decision: "block" }
-    - { protocol: "mcp", tool: "github.create_or_update_file", target: "*.go",    decision: "block" }
-    - { protocol: "mcp", tool: "github.create_or_update_file", target: "*.py",    decision: "block" }
-    - { protocol: "mcp", tool: "github.create_or_update_file", target: "*.js",    decision: "block" }
-    - { protocol: "mcp", tool: "github.create_or_update_file", target: "*.jsx",   decision: "block" }
-    - { protocol: "mcp", tool: "github.create_or_update_file", target: "*.ts",    decision: "block" }
-    - { protocol: "mcp", tool: "github.create_or_update_file", target: "*.tsx",   decision: "block" }
-    - { protocol: "mcp", tool: "github.create_or_update_file", target: "*.rs",    decision: "block" }
-    - { protocol: "mcp", tool: "github.create_or_update_file", target: "*.java",  decision: "block" }
-    - { protocol: "mcp", tool: "github.create_or_update_file", target: "*.kt",    decision: "block" }
-    - { protocol: "mcp", tool: "github.create_or_update_file", target: "*.swift", decision: "block" }
+    - { protocol: "git", tool: "github.create_or_update_file", target: "**/*.go",     decision: "block" }
+    - { protocol: "git", tool: "github.create_or_update_file", target: "**/*.py",     decision: "block" }
+    - { protocol: "git", tool: "github.create_or_update_file", target: "**/*.js",     decision: "block" }
+    - { protocol: "git", tool: "github.create_or_update_file", target: "**/*.jsx",    decision: "block" }
+    - { protocol: "git", tool: "github.create_or_update_file", target: "**/*.ts",     decision: "block" }
+    - { protocol: "git", tool: "github.create_or_update_file", target: "**/*.tsx",    decision: "block" }
+    - { protocol: "git", tool: "github.create_or_update_file", target: "**/*.rs",     decision: "block" }
+    - { protocol: "git", tool: "github.create_or_update_file", target: "**/*.java",   decision: "block" }
+    - { protocol: "git", tool: "github.create_or_update_file", target: "**/*.kt",     decision: "block" }
+    - { protocol: "git", tool: "github.create_or_update_file", target: "**/*.swift",  decision: "block" }
+    - { protocol: "git", tool: "github.create_or_update_file", target: "**/*.sh",     decision: "block" }
+    - { protocol: "git", tool: "github.create_or_update_file", target: "**/*.tf",     decision: "block" }
+    - { protocol: "git", tool: "github.create_or_update_file", target: "**/*.yml",    decision: "block" }
+    - { protocol: "git", tool: "github.create_or_update_file", target: "**/*.yaml",   decision: "block" }
+    - { protocol: "git", tool: "github.create_or_update_file", target: "**/*.c",      decision: "block" }
+    - { protocol: "git", tool: "github.create_or_update_file", target: "**/*.cpp",    decision: "block" }
+    - { protocol: "git", tool: "github.create_or_update_file", target: "**/*.h",      decision: "block" }
+    - { protocol: "git", tool: "github.create_or_update_file", target: "**/*.rb",     decision: "block" }
+    - { protocol: "git", tool: "github.create_or_update_file", target: "**/*.php",    decision: "block" }
+    - { protocol: "git", tool: "github.create_or_update_file", target: "**/*.sql",    decision: "block" }
+    - { protocol: "git", tool: "github.create_or_update_file", target: "Dockerfile",  decision: "block" }
+    - { protocol: "git", tool: "github.create_or_update_file", target: "**/Dockerfile", decision: "block" }
+    - { protocol: "mcp", tool: "github.create_or_update_file", target: "**/*.go",     decision: "block" }
+    - { protocol: "mcp", tool: "github.create_or_update_file", target: "**/*.py",     decision: "block" }
+    - { protocol: "mcp", tool: "github.create_or_update_file", target: "**/*.js",     decision: "block" }
+    - { protocol: "mcp", tool: "github.create_or_update_file", target: "**/*.jsx",    decision: "block" }
+    - { protocol: "mcp", tool: "github.create_or_update_file", target: "**/*.ts",     decision: "block" }
+    - { protocol: "mcp", tool: "github.create_or_update_file", target: "**/*.tsx",    decision: "block" }
+    - { protocol: "mcp", tool: "github.create_or_update_file", target: "**/*.rs",     decision: "block" }
+    - { protocol: "mcp", tool: "github.create_or_update_file", target: "**/*.java",   decision: "block" }
+    - { protocol: "mcp", tool: "github.create_or_update_file", target: "**/*.kt",     decision: "block" }
+    - { protocol: "mcp", tool: "github.create_or_update_file", target: "**/*.swift",  decision: "block" }
+    - { protocol: "mcp", tool: "github.create_or_update_file", target: "**/*.sh",     decision: "block" }
+    - { protocol: "mcp", tool: "github.create_or_update_file", target: "**/*.tf",     decision: "block" }
+    - { protocol: "mcp", tool: "github.create_or_update_file", target: "**/*.yml",    decision: "block" }
+    - { protocol: "mcp", tool: "github.create_or_update_file", target: "**/*.yaml",   decision: "block" }
+    - { protocol: "mcp", tool: "github.create_or_update_file", target: "**/*.c",      decision: "block" }
+    - { protocol: "mcp", tool: "github.create_or_update_file", target: "**/*.cpp",    decision: "block" }
+    - { protocol: "mcp", tool: "github.create_or_update_file", target: "**/*.h",      decision: "block" }
+    - { protocol: "mcp", tool: "github.create_or_update_file", target: "**/*.rb",     decision: "block" }
+    - { protocol: "mcp", tool: "github.create_or_update_file", target: "**/*.php",    decision: "block" }
+    - { protocol: "mcp", tool: "github.create_or_update_file", target: "**/*.sql",    decision: "block" }
+    - { protocol: "mcp", tool: "github.create_or_update_file", target: "Dockerfile",  decision: "block" }
+    - { protocol: "mcp", tool: "github.create_or_update_file", target: "**/Dockerfile", decision: "block" }
 
     # GitHub: opening a PR is the review point.
     - { protocol: "git", tool: "github.create_pull_request", decision: "review" }
@@ -113,16 +137,28 @@ tool_policies:
     - { protocol: "shell", tool: "shell.*", target: "README*",    decision: "review" }
     - { protocol: "shell", tool: "shell.*", target: "CHANGELOG*", decision: "review" }
     - { protocol: "shell", tool: "shell.*", target: "docs/**",    decision: "review" }
-    - { protocol: "shell", tool: "shell.*", target: "*.go",    decision: "block" }
-    - { protocol: "shell", tool: "shell.*", target: "*.py",    decision: "block" }
-    - { protocol: "shell", tool: "shell.*", target: "*.js",    decision: "block" }
-    - { protocol: "shell", tool: "shell.*", target: "*.jsx",   decision: "block" }
-    - { protocol: "shell", tool: "shell.*", target: "*.ts",    decision: "block" }
-    - { protocol: "shell", tool: "shell.*", target: "*.tsx",   decision: "block" }
-    - { protocol: "shell", tool: "shell.*", target: "*.rs",    decision: "block" }
-    - { protocol: "shell", tool: "shell.*", target: "*.java",  decision: "block" }
-    - { protocol: "shell", tool: "shell.*", target: "*.kt",    decision: "block" }
-    - { protocol: "shell", tool: "shell.*", target: "*.swift", decision: "block" }
+    - { protocol: "shell", tool: "shell.*", target: "**/*.go",     decision: "block" }
+    - { protocol: "shell", tool: "shell.*", target: "**/*.py",     decision: "block" }
+    - { protocol: "shell", tool: "shell.*", target: "**/*.js",     decision: "block" }
+    - { protocol: "shell", tool: "shell.*", target: "**/*.jsx",    decision: "block" }
+    - { protocol: "shell", tool: "shell.*", target: "**/*.ts",     decision: "block" }
+    - { protocol: "shell", tool: "shell.*", target: "**/*.tsx",    decision: "block" }
+    - { protocol: "shell", tool: "shell.*", target: "**/*.rs",     decision: "block" }
+    - { protocol: "shell", tool: "shell.*", target: "**/*.java",   decision: "block" }
+    - { protocol: "shell", tool: "shell.*", target: "**/*.kt",     decision: "block" }
+    - { protocol: "shell", tool: "shell.*", target: "**/*.swift",  decision: "block" }
+    - { protocol: "shell", tool: "shell.*", target: "**/*.sh",     decision: "block" }
+    - { protocol: "shell", tool: "shell.*", target: "**/*.tf",     decision: "block" }
+    - { protocol: "shell", tool: "shell.*", target: "**/*.yml",    decision: "block" }
+    - { protocol: "shell", tool: "shell.*", target: "**/*.yaml",   decision: "block" }
+    - { protocol: "shell", tool: "shell.*", target: "**/*.c",      decision: "block" }
+    - { protocol: "shell", tool: "shell.*", target: "**/*.cpp",    decision: "block" }
+    - { protocol: "shell", tool: "shell.*", target: "**/*.h",      decision: "block" }
+    - { protocol: "shell", tool: "shell.*", target: "**/*.rb",     decision: "block" }
+    - { protocol: "shell", tool: "shell.*", target: "**/*.php",    decision: "block" }
+    - { protocol: "shell", tool: "shell.*", target: "**/*.sql",    decision: "block" }
+    - { protocol: "shell", tool: "shell.*", target: "Dockerfile",  decision: "block" }
+    - { protocol: "shell", tool: "shell.*", target: "**/Dockerfile", decision: "block" }
 
     # Shell: git read/local workflow.
     - { protocol: "shell", tool: "shell.git", target: "git status*",       decision: "allow" }
@@ -145,7 +181,10 @@ tool_policies:
 
     # Shell: docs validation and site builds.
     - { protocol: "shell", tool: "shell.pytest", decision: "allow" }
-    - { protocol: "shell", tool: "shell.go",     decision: "allow" }
+    - { protocol: "shell", tool: "shell.go", target: "go test*",  decision: "allow" }
+    - { protocol: "shell", tool: "shell.go", target: "go build*", decision: "allow" }
+    - { protocol: "shell", tool: "shell.go", target: "go vet*",   decision: "allow" }
+    - { protocol: "shell", tool: "shell.go", decision: "review" }
     - { protocol: "shell", tool: "shell.cargo", target: "cargo test*",      decision: "allow" }
     - { protocol: "shell", tool: "shell.cargo", target: "cargo build*",     decision: "allow" }
     - { protocol: "shell", tool: "shell.cargo", target: "cargo check*",     decision: "allow" }
@@ -201,4 +240,3 @@ tool_policies:
 
     # Global backstop: anything tagged as delete is blocked.
     - { protocol: "*", tool: "*", capability: "delete", decision: "block" }
-
